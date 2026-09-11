@@ -1,0 +1,10 @@
+# Physics Arc 3D - GitHub Pages
+
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+
+*.tmp
+*.log
