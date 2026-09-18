@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Physics Arc 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game"></div>
+
+  <div id="hud">
+    <div class="topbar">
+      <div class="brand">PHYSICS ARC <span>3D</span></div>
+      <div class="stats">
+        <b id="level">LEVEL 01</b>
+        <span>SHOTS <strong id="shots">●●●</strong></span>
+        <span>STARS <strong id="stars">☆☆☆</strong></span>
+      </div>
+    </div>
+    <div id="objective"></div>
+    <div id="status"></div>
+    <div class="controls">
+      <button id="restart">RESTART</button>
+      <button id="next">NEXT LEVEL</button>
+      <button id="camera">CAMERA: FREE</button>
+    </div>
+    <div id="help">← → 카메라 좌우 회전 &nbsp;|&nbsp; ↑ ↓ 카메라 위/아래 회전 &nbsp;|&nbsp; 마우스 드래그 발사 방향·힘 &nbsp;|&nbsp; SPACE 발사 &nbsp;|&nbsp; R 재시작</div>
+  </div>
+
+  <div id="start">
+    <div class="panel">
+      <h1>PHYSICS ARC <span>3D</span></h1>
+      <div class="start-help">
+        <p><b>목표</b><br>공을 포물선으로 발사하여 링을 통과시키세요.</p>
+        <p><b>조작</b></p>
+        <ul>
+          <li><span>마우스 드래그</span>발사 방향 및 힘 조절 (위로 드래그할수록 높은 각도)</li>
+          <li><span>SPACE</span>발사</li>
+          <li><span>R</span>재시작</li>
+          <li><span>← →</span>카메라 좌우 회전</li>
+          <li><span>↑ ↓</span>카메라 위/아래 회전</li>
+        </ul>
+      </div>
+      <button id="startBtn">게임 시작</button>
+    </div>
+  </div>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.181.1/build/three.module.js"
+      }
+    }
+  </script>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
